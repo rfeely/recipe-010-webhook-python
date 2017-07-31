@@ -196,7 +196,7 @@ def get_script_url():
 # See http://stackoverflow.com/a/8891890/64904
 def url_origin(s, use_forwarded_host = False):
     # Force to HTTPS
-	ssl      = True #(('HTTPS' in s) and s['HTTPS'] == 'on')
+    ssl      = True #(('HTTPS' in s) and s['HTTPS'] == 'on')
     sp       = s['SERVER_PROTOCOL'].lower()
     protocol = sp[:sp.find('/')] + ('s' if ssl else '' )
     port     = s['SERVER_PORT']
